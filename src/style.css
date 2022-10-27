@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 20px 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-container {
+  width: 50%;
+  height: 300px;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 30px;
+  background-color: #123;
+  border-radius: 25px;
+}
+
+#record {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background-color: crimson;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+#mic-icon {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  opacity: .5;
+}
