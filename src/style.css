@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: aliceblue;
   font-family: sans-serif;
+  outline: none;
 }
 
 .container {
@@ -19,9 +20,11 @@
   width: 50%;
   height: 300px;
   font-size: 1.4rem;
-  text-align: center;
-  padding: 30px;
+  padding: 10px;
   background-color: #123;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 25px;
 }
 
@@ -37,6 +40,11 @@
   justify-content: center;
   margin: 15px 0;
   cursor: pointer;
+  transition: all .4s ease;
+}
+
+.recording {
+  border-radius: 10px !important;
 }
 
 #mic-icon {
@@ -44,4 +52,8 @@
   width: 34px;
   height: 34px;
   opacity: .5;
+}
+
+#mic, #mic option {
+  color: #123;
 }

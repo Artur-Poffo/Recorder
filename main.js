@@ -1,4 +1,12 @@
-const { app, BrowserWindow, Menu } = require("electron")
+require("dotenv").config()
+const { app, BrowserWindow, Menu, ipcMain, shell } = require("electron")
+
+const os = require("os")
+const fs = require("fs")
+const path = require("path")
+
+//Destination of save files:
+const destination = path.join(os.homedir(), "audios")
 
 const isDev = process.env.NODE_ENV !== undefined && process.env.NODE_ENV === "development" ? true : false
 const isMac = process.platform == "darwin"
@@ -12,7 +20,7 @@ function createWindow() {
     backgroundColor: "#234",
     webPreferences: {
       nodeIntegration: true,
-      defaultEncoding: false
+      contextIsolation: false
     }
   })
 
@@ -36,7 +44,8 @@ function createWindow() {
           label: "Preferences"
         },
         {
-          label: "Open Destination Folder"
+          label: "Open Destination Folder",
+          click: () => { shell.openPath(destination) }
         }
       ]
     },
@@ -66,4 +75,11 @@ app.on("activate", () => {
 
 app.whenReady().then(() => {
   createWindow()
+})
+
+//Save File Event:
+
+ipcMain.on("save_buffer", (e, buffer) => {
+  const filePath = path.join(destination, `${Date.now()}`)
+  fs.writeFileSync(`${filePath}.webm`, buffer)
 })

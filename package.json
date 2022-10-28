@@ -4,12 +4,14 @@
   "description": "Gravador Com Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "start_dev": "NODE_ENV=development electron ."
+    "start": "electron ."
   },
   "author": "Artur Poffo",
   "license": "ISC",
   "devDependencies": {
     "electron": "^21.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }
