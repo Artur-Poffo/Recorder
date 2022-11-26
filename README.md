@@ -1,14 +1,14 @@
-### Gravador:
+### Recorder:
 
-> Status: Versão 1.0.0 ✨
+> Status: Version 1.0.0 ✨
 
-## Tecnologias:
+## Technologies:
 
 - Electron
 
-### Descrição:
+### Description:
 
-Aplicativo Desktop de gravador criado inteiramente com Electron. Selecione o botão centralizado para começar a gravar sua voz e pressione novamente para salvar o         arquivo em seu computador, por padrão o **App vai tentar salvar o arquivo de áudio na pasta raiz do seu sistema dentro de uma subpasta chamada ` "audio" `, crie essa pasta no seu sistema ` ou ` acesse a janela de preferências para mudar o destino padrão do arquivo.**
+Desktop recorder application created entirely with Electron. Select the center button to start recording your voice and press again to save the file to your computer, by default the **App will try to save the audio file in your system root folder inside a subfolder called ` "audio" ` , create this folder on your system ` or ` access the preferences window to change the default destination of the file.**
 
-> <a href="https://drive.google.com/file/d/13bD0m09cwYDHzc-vXdPE2mtPzL9KH7k0/view?usp=sharing" >Link do google drive para baixar o instalador do App e testar.</a>
+> <a href="https://drive.google.com/file/d/13bD0m09cwYDHzc-vXdPE2mtPzL9KH7k0/view?usp=sharing" >Google drive link to download the App installer and test.</a>
 
